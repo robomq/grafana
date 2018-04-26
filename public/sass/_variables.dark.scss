@@ -39,10 +39,17 @@ $purple: #9933cc;
 $variable: #32d1df;
 $orange: #eb7b18;
 
-$brand-primary: $orange;
-$brand-success: $green;
-$brand-warning: $brand-primary;
-$brand-danger: $red;
+// RoboMQ colors
+// -------------------------
+$RoboMQBlue: #188bdc;
+$RoboMQGreen: #a5ce38;
+$RoboMQOrange: #f09609;
+$RoboMQRed: #ed1c24;
+
+$brand-primary: $RoboMQBlue;
+$brand-success: $RoboMQGreen;
+$brand-warning: $RoboMQOrange;
+$brand-danger: $RoboMQRed;
 
 $query-blue: $blue;
 
@@ -70,9 +77,9 @@ $text-shadow-faint: 1px 1px 4px rgb(45, 45, 45);
 // gradients
 $brand-gradient: linear-gradient(
   to right,
-  rgba(255, 213, 0, 0.7) 0%,
-  rgba(255, 68, 0, 0.7) 99%,
-  rgba(255, 68, 0, 0.7) 100%
+  rgba(240, 152, 91, 1) 0%,
+  rgba(245, 129, 33, 1) 33%,
+  rgba(24, 139, 205, 1) 99%
 );
 $page-gradient: linear-gradient(180deg, #222426 10px, rgb(22, 23, 25) 100px);
 

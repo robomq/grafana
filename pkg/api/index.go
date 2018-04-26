@@ -238,13 +238,15 @@ func setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, error) {
 					Icon:        "gicon gicon-team",
 					Url:         setting.AppSubUrl + "/org/teams",
 				},
-				{
-					Text:        "Plugins",
-					Id:          "plugins",
-					Description: "View and configure plugins",
-					Icon:        "gicon gicon-plugins",
-					Url:         setting.AppSubUrl + "/plugins",
-				},
+				/*
+					{
+						Text:        "Plugins",
+						Id:          "plugins",
+						Description: "View and configure plugins",
+						Icon:        "gicon gicon-plugins",
+						Url:         setting.AppSubUrl + "/plugins",
+					},
+				*/
 				{
 					Text:        "Preferences",
 					Id:          "org-settings",
@@ -289,15 +291,18 @@ func setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, error) {
 
 	data.NavTree = append(data.NavTree, &dtos.NavLink{
 		Text:         "Help",
-		SubTitle:     fmt.Sprintf(`Grafana v%s (%s)`, setting.BuildVersion, setting.BuildCommit),
+		SubTitle:     fmt.Sprintf(`RoboMQ Analytics`),
 		Id:           "help",
 		Url:          "#",
 		Icon:         "gicon gicon-question",
 		HideFromMenu: true,
 		Children: []*dtos.NavLink{
 			{Text: "Keyboard shortcuts", Url: "/shortcuts", Icon: "fa fa-fw fa-keyboard-o", Target: "_self"},
-			{Text: "Community site", Url: "http://community.grafana.com", Icon: "fa fa-fw fa-comment", Target: "_blank"},
-			{Text: "Documentation", Url: "http://docs.grafana.org", Icon: "fa fa-fw fa-file", Target: "_blank"},
+			/*
+				  {Text: "Keyboard shortcuts", Url: "/shortcuts", Icon: "fa fa-fw fa-keyboard-o", Target: "_self"},
+					{Text: "Community site", Url: "http://community.grafana.com", Icon: "fa fa-fw fa-comment", Target: "_blank"},
+					{Text: "Documentation", Url: "http://docs.grafana.org", Icon: "fa fa-fw fa-file", Target: "_blank"},
+			*/
 		},
 	})
 
