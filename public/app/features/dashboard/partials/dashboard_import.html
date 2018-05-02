@@ -8,11 +8,11 @@
       <dash-upload on-upload="ctrl.onUpload(dash)"></dash-upload>
     </form>
 
-    <h5 class="section-heading">Grafana.com Dashboard</h5>
+    <h5 class="section-heading">External Dashboard</h5>
 
     <div class="gf-form-group">
       <div class="gf-form gf-form--grow">
-        <input type="text" class="gf-form-input max-width-30" ng-model="ctrl.gnetUrl" placeholder="Paste Grafana.com dashboard url or id" ng-blur="ctrl.checkGnetDashboard()"></textarea>
+        <input type="text" class="gf-form-input max-width-30" ng-model="ctrl.gnetUrl" placeholder="Paste external dashboard url or id" ng-blur="ctrl.checkGnetDashboard()"></textarea>
       </div>
       <div class="gf-form" ng-if="ctrl.gnetError">
         <label class="gf-form-label text-warning">

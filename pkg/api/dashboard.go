@@ -321,7 +321,10 @@ func GetHomeDashboard(c *m.ReqContext) Response {
 	}
 
 	if c.HasUserRole(m.ROLE_ADMIN) && !c.HasHelpFlag(m.HelpFlagGettingStartedPanelDismissed) {
-		addGettingStartedPanelToHomeDashboard(dash.Dashboard)
+		/*
+		 * This is commented out so the dashboard with the extra widgets are in displayed
+		 * addGettingStartedPanelToHomeDashboard(dash.Dashboard)
+		 */
 	}
 
 	return JSON(200, &dash)

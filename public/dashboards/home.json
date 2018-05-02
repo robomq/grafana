@@ -11,23 +11,6 @@
   "links": [],
   "panels": [
     {
-      "content": "<div class=\"text-center dashboard-header\" style=\"padding: 20px 0 20px 0\">\n<img src=\"public/img/logo_transparent_200x75.png\" width=\"170px\">\n</div>",
-      "editable": true,
-      "id": 1,
-      "links": [],
-      "mode": "html",
-      "style": {},
-      "title": "",
-      "transparent": true,
-      "type": "text",
-      "gridPos": {
-        "w": 24,
-        "h": 3,
-        "x": 0,
-        "y": 0
-      }
-    },
-    {
       "folderId": 0,
       "headings": true,
       "id": 3,

@@ -25,7 +25,7 @@ class Settings {
   constructor(options) {
     var defaults = {
       datasources: {},
-      window_title_prefix: 'RoboMQ - ',
+      window_title_prefix: 'IoTAnalytics - ',
       panels: {},
       new_panel_title: 'Panel Title',
       playlist_timespan: '1m',
